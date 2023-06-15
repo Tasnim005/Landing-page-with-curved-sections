@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.secondary {
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 2rem;
+  padding: 0.5rem 1.9rem;
+  background: none;
+  color: hsl(322, 100%, 66%);
+  font-size: 0.9rem;
+}
+
+.secondary:hover {
+  border: 1px solid hsl(321, 100%, 78%);
+}
+
+main {
+  width: 80%;
+  margin: 12rem auto 5rem auto;
+  text-align: center;
+}
+
+.intro p {
+  width: 45%;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+
+.primary {
+  width: 25%;
+  padding-block: 1rem;
+  margin-bottom: 4rem;
+  border: none;
+  border-radius: 2rem;
+  background: hsl(322, 100%, 66%);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.primary:hover {
+  background: hsl(321, 100%, 78%);
+}
+
+.stat {
+  width: 80%;
+  margin-inline: auto;
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon img {
+  width: 30px;
+  height: 25px;
+}
+
+/* In order to to remove the white space*/
+.grow img,
+.users img {
+  margin-bottom: -5px;
+}
+
+.grow {
+  margin-bottom: 8rem;
+}
+
+.container {
+  background: hsl(207, 100%, 98%);
+  padding: 3rem 8vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 10vw;
+}
+
+.flow .container {
+  background: none;
+}
+
+.users {
+  margin: 4rem 0 8rem 0;
+}
+
+.join {
+  text-align: center;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+footer p {
+  width: 60%;
+  line-height: 1.6;
+}
+
+.footerTop {
+  margin-bottom: -5px;
+}
+
+.logowhite {
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  background: hsl(192, 100%, 9%);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 8rem 8vw;
+}
+
+.contact {
+  margin: 2rem 0;
+}
+
+.contact img {
+  width: 20px;
+  height: 18px;
+  margin-right: 1rem;
+}
+
+.phone,
+.mail {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.newsletter {
+  position: relative;
+}
+
+.newsletter h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+}
+
+input[type="email"]:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  background: hsl(322, 100%, 66%);
+  color: white;
+  padding: 0.7rem 1.3rem;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: hsl(321, 100%, 78%);
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  display: none;
+}
+
+.error p {
+  color: hsl(0, 100%, 63%);
+  font-size: 0.8rem;
+}
+
+.success {
+  background-color: white;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: none;
+}
+
+.success svg {
+  width: 30px;
+  height: 30px;
+}
+
+.success h4 {
+  font-family: system-ui, sans-serif;
+  font-size: 1.7rem;
+  color: black;
+  margin: 1rem 0 1rem 0;
+}
+
+.success p {
+  width: 100%;
+  color: black;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.success button {
+  background: #38cc8c;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 1rem;
+}
+
+.social svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.social svg:hover {
+  color: #1686ee;
+}
+
+@media (max-width: 1000px) {
+  .intro p {
+    width: 60%;
+    margin-inline: auto;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 870px) {
+  h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro p {
+    width: 80%;
+  }
+
+  .primary {
+    min-width: 12rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .imageContainer {
+    order: -1;
+  }
+
+  .text {
+    text-align: center;
+  }
+}
+
+
+@media(max-width: 750px){
+  .stat {
+    text-align: center;
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+
+  .numbers{
+    margin-bottom: 5rem;
+  }
+
+  .container {
+    padding: 3rem 15vw;
+  }
+
+  footer p {
+    width: 90%;
+  }
+
+  .wrapper {
+    background: hsl(192, 100%, 9%);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 8rem 8vw;
+  }
+
+  .newsletter{
+    order: -1;
+    margin-bottom: 6rem;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  input[type="submit"] {
+    width: 10rem;
+    padding: 0.7rem 1.3rem;
+  }
+}
+
+@media(max-width:650px){
+  main {
+    margin: 8rem auto 5rem auto;
+  }
+}
+
+@media(max-width:500px) {
+  .logo img{
+    width: 60%;
+    height: 1.5rem;
+  }
+
+  .secondary {
+    padding: 0.5rem 1.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media(max-width:500px) {
+  .secondary {
+    padding: 0.6rem 2.2rem;
+    font-size: 0.8rem;
+  }
+
+  .join{
+    width: 90%;
+    margin-inline: auto;
+  }
+}
