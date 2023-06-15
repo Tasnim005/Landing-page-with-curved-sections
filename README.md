@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/Tasnim005/Landing-page-with-curved-sections))
+- Live Site URL: [Preview](https://tasnim005.github.io/Landing-page-with-curved-sections/))
 
 ## My process
 
